@@ -1,0 +1,150 @@
+// -----------------------------
+// Tags
+
+.cm-tag {
+	font-size: 0.75rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 1px 0 0;
+	vertical-align: 1px;
+	white-space: nowrap;
+
+	&.cm-keyword {
+		display: none !important;
+	}
+
+	&.cm-tagname + span,
+	&.cm-tagvalue + span {
+		display: inline !important;
+	}
+
+	&.cm-tagname {
+		border-radius: 3px;
+		background: rgb(92%, 92%, 92%);
+		color: rgb(30%, 30%, 30%);
+		-webkit-transition: all ease-in-out;
+		padding-left: 7px;
+		padding-right: 7px;
+
+		&:hover {
+			background: rgb(89%, 89%, 89%);
+			color: rgb(10%, 10%, 10%);
+		}
+
+		+ .cm-keyword {
+			padding-left: 2px;
+		}
+	}
+}
+
+// -----------------------------
+// Tag Colours
+
+pre[cm-low] {
+	span[class~=cm-text] {
+		color: rgb(101, 143, 205);
+	}
+}
+
+pre[cm-high] {
+	span[class~=cm-text] {
+		color: rgb(228, 113, 112);
+	}
+}
+
+pre[cm-hl],
+pre[cm-highlight] {
+	span[class~=cm-text] {
+		background: rgb(255, 252, 188);
+		&.cm-code {
+			background: rgba(49, 49, 49, 0.08);
+		}
+	}
+}
+
+.cm-tag {
+	&.tag-todo {
+		background: rgb(237, 227, 232);
+		color: rgb(176, 38, 112);
+		&:hover {
+			background: rgb(230, 211, 219);
+			color: rgb(117, 26, 74);
+		}
+	}
+	&.tag-bug {
+		background: rgb(231, 236, 210);
+		color: rgb(81, 99, 26);
+		&:hover {
+			background: rgb(222, 230, 194);
+		}
+	}
+	&.tag-research {
+		background: rgb(222, 232, 247);
+		&:hover {
+			background: rgb(202, 218, 241);
+		}
+	}
+}
+
+// -----------------------------
+// Percentage Tags
+
+.tag-p1,
+.tag-p2,
+.tag-p3,
+.tag-p4,
+.tag-p5,
+.tag-p6,
+.tag-p7,
+.tag-p8,
+.tag-p9 {
+	&.cm-tagname {
+		position: relative;
+		background: transparent;
+		border-color: transparent;
+		color: transparent;
+		-webkit-transition: none;
+		padding-right: 3px;
+
+		&:before {
+			font-size: 0.875rem;
+			border-radius: 3px;
+			background: none;
+			color: #4169e1; // royalblue
+			padding: 0;
+			vertical-align: 0;
+			visibility: visible;
+
+			position: absolute;
+			top: -2px;
+			left: 0;
+			text-indent: 0;
+		}
+
+		&:hover {
+			background: transparent;
+			border-color: transparent;
+			color: transparent;
+			&:before {
+				color: #1d44b8;
+			}
+		}
+	}
+}
+
+.tag-p1.cm-tagname:before { content: "10%"; }
+.tag-p2.cm-tagname:before { content: "20%"; }
+.tag-p3.cm-tagname:before { content: "30%"; }
+.tag-p4.cm-tagname:before { content: "40%"; }
+.tag-p5.cm-tagname:before { content: "50%"; }
+.tag-p6.cm-tagname:before { content: "60%"; }
+.tag-p7.cm-tagname:before { content: "70%"; }
+.tag-p8.cm-tagname:before { content: "80%"; }
+.tag-p9.cm-tagname:before { content: "90%"; }
+
+// -----------------------------
+// HTML / Code
+
+.cm-htmlblock-wrapper {
+	font-size: 0.875rem;
+}
