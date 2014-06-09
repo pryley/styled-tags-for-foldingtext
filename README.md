@@ -1,4 +1,4 @@
-tag-classes-for-foldingtext
+Custom Tags for FoldingText
 ===========================
 
 Custom tags available:
