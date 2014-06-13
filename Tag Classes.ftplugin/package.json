@@ -1,9 +1,0 @@
-{
-	"name"        : "Tag Classes",
-	"version"     : "1.0.0",
-	"description" : "Adds the tag name as a class for greater styling control",
-	"homepage"    : "https://github.com/pryley/",
-	"engines"     : {
-		"foldingtext": ">2.0.0"
-	}
-}

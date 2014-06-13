@@ -1,7 +1,7 @@
-Custom Tags for FoldingText
+Styled Tags for FoldingText
 ===========================
 
-Custom tags available:
+Tags available:
 
 - @hl / @highlight
 - @low
