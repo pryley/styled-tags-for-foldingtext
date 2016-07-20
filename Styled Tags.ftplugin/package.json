@@ -1,6 +1,6 @@
 {
 	"name"        : "Styled Tags",
-	"version"     : "1.0.0",
+	"version"     : "1.0.1",
 	"description" : "Adds styled tags to FoldingText",
 	"homepage"    : "https://github.com/pryley/styled-tags-for-foldingtext",
 	"engines"     : {
